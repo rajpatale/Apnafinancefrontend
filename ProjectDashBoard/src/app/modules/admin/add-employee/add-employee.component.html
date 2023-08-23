@@ -1,0 +1,28 @@
+<form [formGroup]= "employeeDetailsForm"   (ngSubmit)="onSubmitUserDetailsForm()" style="text-align:center ; margin-top:50px">
+
+   <input type="text" formControlName="ename" placeholder="Enter Name">
+   <pre></pre>
+   <input type="text" formControlName="esirname" placeholder="Enter SirName">
+   <pre></pre>
+   <input type="text" formControlName="empEmail" placeholder="Enter Email">
+   <pre></pre>
+
+   <input type="text" formControlName="address" placeholder="Enter Address">
+   <pre></pre>
+   <input type="text" formControlName="userType" placeholder="Enter UserType">
+   <pre></pre>
+
+  
+   
+   Select profile Image:-<input type="file" (change)="onSelectProfileImg($event)">
+   
+   <div class="image-container">
+   <img [src]="profImg" width="100px" height="100px " >
+   </div>
+  
+   
+   <pre></pre>
+   
+   <button type="submit">Submit</button>
+   </form>
+   

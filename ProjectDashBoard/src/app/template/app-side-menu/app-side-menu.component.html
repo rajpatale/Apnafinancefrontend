@@ -1,0 +1,4 @@
+
+<div *ngFor="let menu of menus[0][userType]">
+ <button (click)="navigateTo(menu.path)">{{menu.label}}</button>
+</div>

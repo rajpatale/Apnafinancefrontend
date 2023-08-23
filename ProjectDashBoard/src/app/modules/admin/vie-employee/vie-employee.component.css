@@ -1,0 +1,46 @@
+
+.cointainer{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input{
+
+    display: flex;
+    justify-content: center;
+}
+
+input{
+
+    width: 300px;
+    height: 30px;
+   
+    padding-left: 30px;
+    background-color:white;
+    color: black;
+   
+}
+
+.button{
+   
+    background-color: white;
+    color: black;
+}
+table{
+    width: 900px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end; /* Aligns the content to the right */
+    padding: 10px; /* Optional padding for the footer */
+    background-color: #f0f0f0; /* Optional background color for the footer */
+  }
+  
+  /* Additional styling for the buttons (optional) */
+  .footer button {
+    margin-left: 10px; /* Optional spacing between buttons */
+  }
+ 

@@ -1,0 +1,13 @@
+.navbar{
+    background-color: rebeccapurple;
+    margin: 0;
+    padding:10;
+    display: flex;
+    justify-content: center;
+
+    height: 60px;
+    padding-top: 30px;
+}
+button{
+    margin-left: 50px;
+}

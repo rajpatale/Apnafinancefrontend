@@ -1,0 +1,9 @@
+.appNavBar{
+    background-color: darkslateblue;
+    height: 60px;
+    padding-top: 20px;
+
+}
+button{
+    float: right;
+}

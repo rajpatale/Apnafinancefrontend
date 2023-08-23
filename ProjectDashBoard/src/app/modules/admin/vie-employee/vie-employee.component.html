@@ -1,0 +1,61 @@
+
+
+<div class="cointainer">
+  <div class="input">
+    <input type="search" [(ngModel)]="ename" placeholder="Enter UserName For search">
+    <button class="button"(click)="searchResult()">SEARCH</button>
+  </div><br>
+<table border="2" align="center">
+<thead>
+<tr>
+  <th scope="col">Employee Id</th>
+        <th scope="col">Employee Name</th>
+        <th scope="col">Employee Sirname</th>
+        <th scope="col">Employee EmailIdr</th>
+        <th scope="col">Employee Address</th>
+        <th>Employee Profile Photo</th>
+        <th>UserType</th>
+        <th scope="col">Action</th>
+        
+</tr>
+
+
+</thead>
+
+<tbody *ngFor="let e of employee">
+<tr>
+<td>{{e.eid}}</td>
+<td>{{e.ename}}</td>
+<td>{{e.esirname}}</td>
+<td>{{e.empEmail}}</td>
+<td>{{e.address}}</td>
+
+<td><img [src]="'data:image/jpg;base64,'+e.profilephoto" width="50px" height="50px"></td>
+<td>{{e.userType}}</td>
+<td><button (click)="sendAuthMail(e)">Send mail</button></td> 
+<!-- 
+<td><button (click)="editData(u)">Update</button></td> 
+<td><button (click)="deleteData(u)">Delete</button> </td> -->
+</tr>
+
+
+</tbody>
+
+
+</table>
+<div class="footer">
+<tfoot>
+  <tr>
+<button [hidden]="pagenumber==0"     (click)="privioususer()" >privious</button>
+&nbsp;
+<button (click)="nextuser()">Next</button>
+
+
+
+  </tr>
+
+
+
+</tfoot>
+</div>
+   

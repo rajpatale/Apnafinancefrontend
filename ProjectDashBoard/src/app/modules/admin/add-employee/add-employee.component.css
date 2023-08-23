@@ -1,0 +1,4 @@
+.image-container {
+    position: relative;
+    left: +200px; /* Adjust this value to control the amount of left shift */
+  }
