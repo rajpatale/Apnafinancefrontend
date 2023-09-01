@@ -61,4 +61,15 @@ export class CommenserviceService {
 
     return this.http.get("http://localhost:9091/Enquiry/enquirysByStatus/"+status1+"/"+status2)
   }
+
+  VerifyEnquiry(eid:any)
+  {
+    return this.http.put("http://localhost:9091/Enquiry/updateUserStatus/"+eid,{});
+  }
+
+
+  checkCibil(pancardNumber:any)
+  {
+    return this.http.get("http://localhost:9091/checkCibil/"+pancardNumber);
+  }
 }

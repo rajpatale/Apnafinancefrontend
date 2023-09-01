@@ -80,6 +80,14 @@ deleteEnquiryUser(enq:any)
        this.cs.deleteEnquiryUser(enq.eid).subscribe();
        window.location.reload();
 }
+
+SendToOe(enq:any)
+{
+this.cs.VerifyEnquiry(enq.eid).subscribe((data:any)=>{
+  window.location.reload();
+})
+}
+
 }
 
 

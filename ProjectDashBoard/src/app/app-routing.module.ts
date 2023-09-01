@@ -21,6 +21,7 @@ const routes: Routes = [
     {path:'oe' , loadChildren:()=>import('src/app/modules/oe/oe.module').then(e=>e.OeModule)},
     {path:'re', loadChildren:()=>import('src/app/modules/re/re.module').then(p=>p.ReModule)},
     {path:'admin', loadChildren:()=>import('src/app/modules/admin/admin.module').then(c=>c.AdminModule)},
+    {path:'cm', loadChildren:()=>import('src/app/modules/cm/cm.module').then(c=>c.CmModule)},
     
 
   ]

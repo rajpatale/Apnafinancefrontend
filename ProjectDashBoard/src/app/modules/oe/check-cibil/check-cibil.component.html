@@ -1,1 +1,69 @@
-<p>check-cibil works!</p>
+
+
+<div class="cointainer">
+    <div class="input">
+      <input type="search" [(ngModel)]="firstName" placeholder="Enter FirstName For search">
+      <button class="button"(click)="searchEnquiryResult()">SEARCH</button>
+    </div><br>
+  <table border="2" align="center">
+  <thead>
+  <tr>
+    <th scope="col">Enquiry Id</th>
+          <th scope="col">Enquiry firstName</th>
+          <th scope="col">Enquiry lastName</th>
+          <th scope="col">Enquiry age</th>
+          <th scope="col">Enquiry email</th>
+          <th>Enquiry MobileNumber</th>
+          <th>Enquiry  EancardNumber</th>
+          <th>Enquiry  EnquiryStatus</th>
+          <th>cibil</th>
+          <th scope="col">Action</th>
+          
+  </tr>
+  
+  
+  </thead>
+  
+  <tbody *ngFor="let e of enquiryuser">
+  <tr>
+  <td>{{e.eid}}</td>
+  <td>{{e.firstName}}</td>
+  <td>{{e.lastName}}</td>
+  <td>{{e.age}}</td>
+  <td>{{e.email}}</td>
+  <td>{{e.mobileNumber}}</td>
+  
+
+  <td>{{e.pancardNumber}}</td>
+  <td>{{e.enquiryStatus}}</td>
+
+    <td>{{e.cibil.cibilScore}}</td>
+  
+  
+  <!-- <td><button (click)="editData(u)">Update</button></td>  -->
+  <td style="width:150px"><button (click)="deleteEnquiryUser(e)">Delete</button>  &nbsp;
+    <button (click)="checkCibil(e)" >Check Cibil</button>  &nbsp;
+  </tr>
+  
+  
+  </tbody>
+  
+  
+  </table>
+  <div class="footer">
+  <tfoot>
+    <tr>
+  <button [hidden]="pagenumber==0"     (click)="privioususer()" >privious</button>
+  &nbsp;
+  <button (click)="nextuser()">Next</button>
+  
+  
+  
+    </tr>
+  
+  
+  
+  </tfoot>
+  </div>
+     
+

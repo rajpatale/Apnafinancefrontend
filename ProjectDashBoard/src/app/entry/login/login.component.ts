@@ -41,6 +41,10 @@ export class LoginComponent implements OnInit{
      localStorage.setItem("userType", "admin");
      this.router.navigateByUrl('/dash/admin')
     }
+    else if(data.responceData.userType=="cm"){
+      localStorage.setItem("userType", "cm");
+      this.router.navigateByUrl('/dash/cm')
+     }
       else{
        alert("Enter vlid login credentials..!")
       }

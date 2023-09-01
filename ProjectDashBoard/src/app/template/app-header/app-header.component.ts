@@ -24,5 +24,10 @@ export class AppHeaderComponent implements OnInit{
       this.usertype='Admin Login'
       
     }
+    else if(ut=='cm')
+    {
+     
+      this.usertype='Credit Manager'
+    }
   }
 }

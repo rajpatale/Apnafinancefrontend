@@ -4,16 +4,18 @@ import { CommonModule } from '@angular/common';
 import { OeRoutingModule } from './oe-routing.module';
 import { CheckCibilComponent } from './check-cibil/check-cibil.component';
 import { VerifyAppComponent } from './verify-app/verify-app.component';
+import {FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 
 @NgModule({
   declarations: [
     CheckCibilComponent,
-    VerifyAppComponent
+    VerifyAppComponent,
+    
   ],
   imports: [
     CommonModule,
-    OeRoutingModule
+    OeRoutingModule,FormsModule,ReactiveFormsModule
   ]
 })
 export class OeModule { }
